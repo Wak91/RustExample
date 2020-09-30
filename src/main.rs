@@ -1,21 +1,20 @@
-use clap::{Arg, App};
+use clap::{App, Arg};
 use comrak::{markdown_to_html, ComrakOptions};
 use std::fs;
 
 fn main() {
     println!("Hello, user!");
-	
-	let filename = "C:/Documenti/markdown-sample.md";
-	
-	let contents = fs::read_to_string(filename)
-        .expect("Something went wrong reading the file");
-	
-	let option = ComrakOptions::default();
+
+    let filename = "C:/Documenti/markdown-sample.md";
+
+    let contents = fs::read_to_string(filename).expect("Something went wrong reading the file");
+
+    let option = ComrakOptions::default();
     let rendered = markdown_to_html(&contents, &option);
     println!("{}", rendered);
 }
 
-/* 
+/*
 struct HelloArgs {
     name: String,
 }
@@ -25,9 +24,9 @@ impl HelloArgs {
     fn new() -> Self {
         // basic app information
         let app = App::new("hello-clap")
-			.version("1.0")
-			.author("Me")
-			.about("Does awesome things");
+            .version("1.0")
+            .author("Me")
+            .about("Does awesome things");
         // Extract the actual name
 
         // Define the name command line option
