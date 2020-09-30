@@ -18,7 +18,7 @@ fn main() {
 // are set up. So you might've been following the wrong doc.
 // Check out `Cargo.toml` file to see what dependencies you have.
 //
-// Here's an example of how to do it wiht 3.0.0-*
+// Here's an example of how to do it with 3.0.0-*
 #[derive(Clap)]
 #[clap(version = "0.1.0", author = "Mario Hlaca")]
 struct HelloOpts {
