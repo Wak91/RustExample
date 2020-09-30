@@ -1,10 +1,8 @@
 [package]
-name = "convert_to_HTML"
-version = "0.1.0"
 authors = ["mhlaca"]
 edition = "2018"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+name = "convert_to_HTML"
+version = "0.1.0"
 
 [dependencies]
 clap = "3.0.0-beta.2"
